@@ -1,0 +1,507 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>슈퍼캣 개인정보 처리방침 · Privacy Policy</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<style>
+  :root{
+    --blue:#0098f7;--blue-d:#0079c8;--blue-soft:#ecf5ff;--blue-bd:#cfe6fb;
+    --ink:#1f2733;--sub:#5b6674;--line:#e5e8ec;--bg:#ffffff;--panel:#f7f9fb;
+    --font:"Pretendard","Pretendard Variable",-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR",sans-serif;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;font-family:var(--font);background:var(--bg);color:var(--ink);font-size:16px;line-height:1.78;-webkit-font-smoothing:antialiased;letter-spacing:-.005em}
+  body.lang-en [data-lang="ko"]{display:none}
+  body.lang-ko [data-lang="en"]{display:none}
+
+  .hd{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:saturate(1.2) blur(6px);border-bottom:1px solid var(--line)}
+  .hd-in{max-width:1080px;margin:0 auto;height:60px;display:flex;align-items:center;justify-content:space-between;padding:0 20px}
+  .logo{display:flex;align-items:baseline;gap:9px;font-weight:800;font-size:18px;color:var(--ink);letter-spacing:.02em}
+  .logo b{color:var(--blue)}
+  .logo span{color:var(--sub);font-weight:700;font-size:13px;letter-spacing:0}
+  .hd-r{display:flex;align-items:center;gap:10px}
+  .lang{display:flex;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+  .lang button{border:0;background:#fff;color:var(--sub);font:700 12.5px/1 var(--font);padding:8px 13px;cursor:pointer;transition:.12s}
+  .lang button.on{background:var(--blue);color:#fff}
+  .tocbtn{display:none;border:1px solid var(--line);background:#fff;color:var(--sub);border-radius:8px;font:700 12.5px/1 var(--font);padding:8px 12px;cursor:pointer}
+  .subnav{position:sticky;top:60px;z-index:49;background:#fff;border-bottom:1px solid var(--line);box-shadow:0 3px 8px rgba(31,39,51,.04)}
+  .subnav-in{max-width:1080px;margin:0 auto;display:flex;gap:2px;padding:0 20px;overflow-x:auto}
+  .subnav a{flex:none;padding:13px 15px;font-size:13.5px;font-weight:700;color:var(--sub);text-decoration:none;border-bottom:2px solid transparent;white-space:nowrap}
+  .subnav a:hover{color:var(--ink)}
+  .subnav a.active{color:var(--blue);border-bottom-color:var(--blue)}
+
+  .crumb{max-width:1080px;margin:0 auto;padding:16px 20px 0;color:var(--sub);font-size:12.5px}
+  .crumb b{color:var(--ink)}
+  .wrap{max-width:1080px;margin:0 auto;padding:6px 20px 90px;display:flex;gap:36px;align-items:flex-start}
+  article{flex:1;min-width:0}
+  h1{font-size:28px;font-weight:800;margin:12px 0 6px;letter-spacing:-.01em}
+  .meta{color:var(--sub);font-size:13px;margin:0 0 16px}
+  .note{background:var(--blue-soft);border:1px solid var(--blue-bd);border-radius:10px;padding:12px 15px;font-size:12.8px;color:#1c5a86;line-height:1.6;margin-bottom:8px}
+  .lead{color:#2b333e;margin:6px 0 18px}
+
+  .art{padding:22px 0 6px;border-top:1px solid var(--line)}
+  h2{font-size:18px;font-weight:800;margin:0 0 12px;color:var(--ink);scroll-margin-top:112px}
+  .art p{margin:0 0 10px;color:#2b333e}
+  .n{margin:8px 0 6px;font-weight:700;color:var(--ink)}
+  .lst{list-style:none;padding:0;margin:6px 0 12px}
+  .lst>li{position:relative;padding-left:28px;margin:0 0 8px;color:#2b333e}
+  .lst>li>.k{position:absolute;left:0;top:0;font-weight:800;color:var(--blue-d)}
+  .lst .lst{margin:7px 0 3px}.lst .lst>li{padding-left:24px}.lst .lst>li>.k{color:var(--sub);font-weight:700}
+  table.dt{width:100%;border-collapse:collapse;margin:8px 0 12px;font-size:13.5px}
+  table.dt th,table.dt td{border:1px solid var(--line);padding:9px 12px;text-align:left;vertical-align:top}
+  table.dt th{background:var(--panel);color:var(--sub);font-weight:700;white-space:nowrap}
+  .star{margin:6px 0 10px;padding:9px 13px;background:var(--panel);border-radius:8px;font-size:14px;color:var(--sub)}
+
+  .foot{border-top:1px solid var(--line);margin-top:36px;padding-top:18px;color:var(--sub);font-size:12.5px;line-height:1.9}
+  .foot .co{color:var(--ink);font-weight:700}
+  .foot .links{margin-bottom:8px}
+  .foot .links a{color:var(--sub);text-decoration:none;margin-right:6px}
+  .foot .links a:hover{color:var(--blue)}
+
+  aside.toc{width:214px;flex:none;position:sticky;top:112px;align-self:flex-start}
+  .toc-in{max-height:calc(100vh - 128px);overflow-y:auto}
+  .toc-t{font-size:11.5px;font-weight:800;color:var(--sub);letter-spacing:.04em;padding:0 10px 8px}
+  .toc a{display:block;padding:6px 10px;border-left:2px solid transparent;color:var(--sub);font-size:12.8px;text-decoration:none;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .toc a:hover{color:var(--ink)}
+  .toc a.active{color:var(--blue);border-left-color:var(--blue);background:var(--blue-soft);font-weight:700}
+
+  @media(max-width:860px){
+    .wrap{flex-direction:column;gap:14px}
+    aside.toc{width:auto;order:-1;position:sticky;top:104px;z-index:20;background:#fff;border:1px solid var(--line);border-radius:10px}
+    .toc-in{position:static;padding:6px}
+    body:not(.toc-open) .toc-in .toc{display:none}
+    .tocbtn{display:inline-block}
+  }
+</style>
+</head>
+<body class="lang-ko">
+  <header class="hd">
+    <div class="hd-in">
+      <div class="logo"><b>SUPERCAT</b><span data-lang="ko">고객지원</span><span data-lang="en">Support</span></div>
+      <div class="hd-r">
+        <button class="tocbtn" id="tocbtn">☰ <span data-lang="ko">목차</span><span data-lang="en">Contents</span></button>
+        <div class="lang" role="group" aria-label="language">
+          <button data-set="ko" class="on">한국어</button><button data-set="en">ENGLISH</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <nav class="subnav"><div class="subnav-in">
+    <a href="terms.html"><span data-lang="ko">서비스 이용약관</span><span data-lang="en">Terms of Service</span></a>
+    <a href="privacy.html" class="active"><span data-lang="ko">개인정보 처리방침</span><span data-lang="en">Privacy Policy</span></a>
+    <a href="operation.html"><span data-lang="ko">운영정책</span><span data-lang="en">Operation Policy</span></a>
+  </div></nav>
+
+  <div class="crumb">
+    <span data-lang="ko"><b>고객지원</b> › 정책 › 개인정보 처리방침</span>
+    <span data-lang="en"><b>Support</b> › Policies › Privacy Policy</span>
+  </div>
+
+  <div class="wrap">
+    <article>
+      <h1><span data-lang="ko">개인정보 처리방침</span><span data-lang="en">Privacy Policy</span></h1>
+      <div class="meta"><span data-lang="ko">시행일 2022. 11. 08.</span><span data-lang="en">Effective November 08, 2022</span></div>
+      <div class="note">
+        <span data-lang="ko">본 문서는 국문·영문을 함께 제공합니다. 영문은 편의를 위한 번역본이며, 해석상 차이가 있는 경우 <b>국문 원문</b>을 기준으로 합니다.</span>
+        <span data-lang="en">This document is provided in both Korean and English. The English text is a reference translation; in case of any discrepancy, the <b>Korean original</b> shall prevail.</span>
+      </div>
+
+      <p class="lead" data-lang="ko">주식회사 슈퍼캣(이하 "회사"라 함)은 이용자에게 최상의 서비스를 제공하고자 하는 목적에서 이용자의 개인정보를 일부 서비스의 제공에 활용하고 있습니다. 회사는 이용자의 개인정보를 처리함에 있어서 "개인정보 보호법", "정보통신망 이용촉진 및 정보보호 등에 관한 법률" 및 기타 법령, 유관기관이 제정한 지침 등 관련 법령을 준수하고 있으며, 이용자의 소중한 개인정보가 남용되는 것을 방지하기 위하여 아래와 같은 개인정보 처리방침을 제정 및 운영하여 이용자의 개인정보가 수집·이용되는 목적, 방식 및 범위를 명확히 하고자 합니다. 본 개인정보 처리방침은 관계 법령 및 지침의 변경이나 회사의 내부 방침 변경 등으로 인하여 변경될 수 있습니다.</p>
+      <p class="lead" data-lang="en">Supercat Co., Ltd. (“Company”) uses users’ personal information for the provision of certain services with the aim of offering the best service to its users. In processing personal information, the Company complies with the “Personal Information Protection Act,” the “Act on Promotion of Information and Communications Network Utilization and Information Protection,” and other relevant laws and guidelines established by related authorities. To prevent the misuse of users’ valuable personal information, the Company establishes and operates the following Privacy Policy to clarify the purpose, method, and scope of the collection and use of personal information. This Privacy Policy may be amended due to changes in relevant laws and guidelines or the Company’s internal policies.</p>
+
+      <div id="doc">
+      <section class="art" id="a1">
+        <h2><span data-lang="ko">제1조 [수집하는 이용자의 개인정보 항목 및 수집방법]</span><span data-lang="en">Article 1 [Items and Methods of Collection of Users’ Personal Information]</span></h2>
+        <div data-lang="ko">
+          <p>① 회사는 다음과 같은 개인정보를 수집하여 처리하고 있으며, 수집된 개인정보는 고시된 이용 목적 외의 용도로는 이용되지 않습니다.</p>
+          <div class="n">1. 회원 가입 및 관리</div>
+          <ul class="lst">
+            <li><span class="k">가.</span> 일반 회원가입 — 필수 항목: 이메일주소(회원 ID), 비밀번호</li>
+            <li><span class="k">나.</span> SNS 계정을 통한 간편가입 — 필수 항목: (구글 플레이) 구글 플레이 ID(이메일 주소), 닉네임, 프로필 사진 / (페이스북) 이름, 프로필 사진 / (애플) 애플계정 이메일 / (애플게임센터) 애플게임센터 ID</li>
+          </ul>
+          <div class="n">2. 결제 관리, 부정거래 확인(결제 서비스 이용 시)</div>
+          <ul class="lst"><li><span class="k">-</span> 필수 항목: 대금 결제 기록</li></ul>
+          <div class="n">3. 정산 서비스 제공(정산 등록 시 해당)</div>
+          <ul class="lst"><li><span class="k">-</span> 필수 항목: 개인 또는 개인사업자의 대표자 정보(성명, 휴대폰번호, 생년월일, 성별, 주민등록번호), 본인확인정보, 계좌정보(은행명, 예금주명, 계좌번호)</li></ul>
+          <div class="n">4. 서비스 이용과정에서 자동으로 생성되어 수집되는 정보</div>
+          <ul class="lst"><li><span class="k">-</span> IP주소, 서비스 이용기록, 방문기록, 회원가입 일시, 불량 이용 기록, 기기정보(기기고유식별자 및 OS버전)</li></ul>
+          <p>② 회사는 다음과 같은 방법으로 개인정보를 수집합니다.</p>
+          <ul class="lst">
+            <li><span class="k">-</span> 홈페이지, 애플리케이션 또는 서비스 이용 과정에서 이용자가 직접 입력하는 방식</li>
+            <li><span class="k">-</span> 자동 수집 저장장치를 통한 생성정보의 수집</li>
+            <li><span class="k">-</span> 제휴사 등으로부터 개인정보를 제공받아 수집</li>
+          </ul>
+        </div>
+        <div data-lang="en">
+          <p>① The Company collects and processes the following personal information, and the collected information is not used for any purpose other than those publicly notified.</p>
+          <div class="n">1. Membership registration and management</div>
+          <ul class="lst">
+            <li><span class="k">a.</span> General sign-up — Required: email address (member ID), password</li>
+            <li><span class="k">b.</span> Simple sign-up via SNS account — Required: (Google Play) Google Play ID (email address), nickname, profile picture / (Facebook) name, profile picture / (Apple) Apple account email / (Apple Game Center) Apple Game Center ID</li>
+          </ul>
+          <div class="n">2. Payment management, fraudulent-transaction check (when using payment services)</div>
+          <ul class="lst"><li><span class="k">-</span> Required: payment records</li></ul>
+          <div class="n">3. Settlement service (applicable upon settlement registration)</div>
+          <ul class="lst"><li><span class="k">-</span> Required: representative information of an individual or sole proprietor (name, mobile number, date of birth, gender, resident registration number), identity verification information, account information (bank name, account holder name, account number)</li></ul>
+          <div class="n">4. Information automatically generated and collected during service use</div>
+          <ul class="lst"><li><span class="k">-</span> IP address, service-use records, visit records, sign-up date/time, abnormal-use records, device information (unique device identifier and OS version)</li></ul>
+          <p>② The Company collects personal information by the following methods.</p>
+          <ul class="lst">
+            <li><span class="k">-</span> Direct entry by the user on the website, application, or during service use</li>
+            <li><span class="k">-</span> Collection of generated information via automatic collection devices</li>
+            <li><span class="k">-</span> Collection by receiving personal information from partners, etc.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="art" id="a2">
+        <h2><span data-lang="ko">제2조 [개인정보 수집·이용의 목적]</span><span data-lang="en">Article 2 [Purpose of Collection and Use of Personal Information]</span></h2>
+        <div data-lang="ko">
+          <p>① 회사는 수집한 개인정보를 다음의 목적으로 처리할 수 있습니다. 처리하고 있는 개인정보는 다음의 목적 이외의 용도로는 이용되지 않으며, 이용 목적이 변경되는 경우에는 별도의 동의 등 관련 법령에 따른 필요한 조치를 이행하겠습니다.</p>
+          <div class="n">1. 홈페이지 회원 가입 및 이용자 관리</div>
+          <ul class="lst"><li><span class="k">-</span> 회원 가입 의사 확인, 서비스 제공에 따른 본인 식별·인증, 회원자격 유지·관리, 중복가입 확인, 불량이용자 관리, 비정상 사용자 적발 및 이용제한, 계약이행, 분쟁처리</li></ul>
+          <div class="n">2. 서비스 이용</div>
+          <ul class="lst"><li><span class="k">-</span> 불만처리 및 기타 고객서비스 제공, 고지사항 전달, 유료결제 서비스 제공 및 결제 내역 고지, 게임 내 협동플레이 및 커뮤니티 서비스 지원</li></ul>
+          <div class="n">3. 정산 이행(정산 등록 회원의 경우)</div>
+          <ul class="lst"><li><span class="k">-</span> 본인 식별·인증, 정산 이행 및 소득 지급</li></ul>
+          <div class="n">4. 기타 법령상 필요에 따른 이용</div>
+          <ul class="lst"><li><span class="k">-</span> 법령 등에 규정된 의무의 이행 등</li></ul>
+        </div>
+        <div data-lang="en">
+          <p>① The Company may process the collected personal information for the following purposes. Processed information is not used beyond these purposes, and where the purpose changes, the Company will take necessary measures such as obtaining separate consent in accordance with relevant laws.</p>
+          <div class="n">1. Website membership registration and user management</div>
+          <ul class="lst"><li><span class="k">-</span> Confirming intent to register, identifying and authenticating the user, maintaining and managing membership, checking duplicate registration, managing abusive users, detecting abnormal users and restricting use, performing the contract, and handling disputes</li></ul>
+          <div class="n">2. Service use</div>
+          <ul class="lst"><li><span class="k">-</span> Handling complaints and other customer service, delivering notices, providing paid services and notifying payment details, and supporting in-game cooperative play and community services</li></ul>
+          <div class="n">3. Settlement (for settlement-registered members)</div>
+          <ul class="lst"><li><span class="k">-</span> Identity verification, settlement, and income payment</li></ul>
+          <div class="n">4. Use as otherwise required by law</div>
+          <ul class="lst"><li><span class="k">-</span> Performance of obligations stipulated by laws, etc.</li></ul>
+        </div>
+      </section>
+
+      <section class="art" id="a3">
+        <h2><span data-lang="ko">제3조 [개인정보의 보유기간 및 이용자 탈퇴]</span><span data-lang="en">Article 3 [Retention Period of Personal Information and Withdrawal of Membership]</span></h2>
+        <div data-lang="ko">
+          <p>① 회사는 이용자로부터 수집한 개인정보를 이용자 자격이 유지되는 동안 보유 및 이용하며, 이용자 자격이 상실되는 경우 또는 이용자 자격이 유지되는 경우에도 해당 정보의 이용 목적이 완전히 달성된 경우에는 지체 없이 파기합니다. 다만, 회사는 다음과 같은 보유 근거가 있는 경우, 기재된 보유 기간까지 개인정보를 보관 및 이용합니다.</p>
+          <ul class="lst">
+            <li><span class="k">-</span> 보유 근거: 회원 탈퇴 시 소비자 불만 및 분쟁 해결, 재가입 제한 등을 위한 목적</li>
+            <li><span class="k">-</span> 보유 기간: 30일</li>
+            <li><span class="k">-</span> 보유 항목: 이메일, 접속기록, 불량이용기록, 대금 결제 기록, 닉네임</li>
+          </ul>
+          <p>② 회사는 관련 법령에 의한 개인정보 보유 사유가 있는 경우에는 제1항에도 불구하고 상법, 전자상거래 등에서의 소비자보호에 관한 법률 등 관계법령의 규정에서 정한 일정한 기간 동안 개인정보를 보관합니다. 이 경우 회사는 보관하는 정보를 별도 분리 보관하며, 보관기간은 다음 각 호와 같습니다.</p>
+          <table class="dt"><thead><tr><th>보존 항목</th><th>보존 기간</th><th>근거 법령</th></tr></thead><tbody>
+            <tr><td>표시·광고에 관한 기록</td><td>6개월</td><td>전자상거래 등에서의 소비자보호에 관한 법률</td></tr>
+            <tr><td>계약 또는 청약 철회 등에 관한 기록</td><td>5년</td><td>전자상거래 등에서의 소비자보호에 관한 법률</td></tr>
+            <tr><td>대금결제 및 재화 등의 공급에 관한 기록</td><td>5년</td><td>전자상거래 등에서의 소비자보호에 관한 법률</td></tr>
+            <tr><td>소비자의 불만 또는 분쟁처리에 관한 기록</td><td>3년</td><td>전자상거래 등에서의 소비자보호에 관한 법률</td></tr>
+            <tr><td>세법이 규정하는 모든 거래에 관한 장부 및 증빙서류</td><td>5년</td><td>국세기본법</td></tr>
+            <tr><td>전자금융 거래에 관한 기록</td><td>5년</td><td>전자금융거래법</td></tr>
+            <tr><td>접속 로그, 접속 IP 정보 등 서비스 이용에 관한 기록</td><td>3개월</td><td>통신비밀보호법</td></tr>
+          </tbody></table>
+          <p>③ 이용자 탈퇴를 신청하시면 해당 계정은 즉시 탈퇴 처리됩니다. 동일한 이메일 주소를 이용한 이용자 가입은 탈퇴 후 1개월 간 제한됩니다.</p>
+        </div>
+        <div data-lang="en">
+          <p>① The Company retains and uses the personal information collected from users while their membership is maintained, and destroys it without delay when membership is lost or when the purpose of use is fully achieved even while membership continues. However, where the Company has a retention basis as follows, it retains and uses the information for the stated period.</p>
+          <ul class="lst">
+            <li><span class="k">-</span> Basis: resolving consumer complaints and disputes upon withdrawal, restricting re-registration, etc.</li>
+            <li><span class="k">-</span> Period: 30 days</li>
+            <li><span class="k">-</span> Items: email, access records, abnormal-use records, payment records, nickname</li>
+          </ul>
+          <p>② Where there is a legal basis for retaining personal information, notwithstanding paragraph ①, the Company retains it for the period stipulated by relevant laws such as the Commercial Act and the Act on Consumer Protection in Electronic Commerce. In such case, the Company stores the information separately, and the retention periods are as follows.</p>
+          <table class="dt"><thead><tr><th>Item</th><th>Period</th><th>Basis</th></tr></thead><tbody>
+            <tr><td>Records on labeling and advertising</td><td>6 months</td><td>Act on Consumer Protection in Electronic Commerce</td></tr>
+            <tr><td>Records on contracts or withdrawal of subscription</td><td>5 years</td><td>Act on Consumer Protection in Electronic Commerce</td></tr>
+            <tr><td>Records on payment and supply of goods</td><td>5 years</td><td>Act on Consumer Protection in Electronic Commerce</td></tr>
+            <tr><td>Records on consumer complaints or dispute handling</td><td>3 years</td><td>Act on Consumer Protection in Electronic Commerce</td></tr>
+            <tr><td>Books and evidential documents on all transactions under tax law</td><td>5 years</td><td>Framework Act on National Taxes</td></tr>
+            <tr><td>Records on electronic financial transactions</td><td>5 years</td><td>Electronic Financial Transactions Act</td></tr>
+            <tr><td>Access logs, access IP information, etc.</td><td>3 months</td><td>Protection of Communications Secrets Act</td></tr>
+          </tbody></table>
+          <p>③ Upon a request for withdrawal, the account is withdrawn immediately. Re-registration with the same email address is restricted for one month after withdrawal.</p>
+        </div>
+      </section>
+
+      <section class="art" id="a4">
+        <h2><span data-lang="ko">제4조 [개인정보의 제공]</span><span data-lang="en">Article 4 [Provision of Personal Information]</span></h2>
+        <div data-lang="ko">
+          <p>① 회사는 이용자의 개인정보를 본 지침 제2조 개인정보의 수집·이용의 목적에서 고지한 범위 내에서 사용하며, 개인정보 처리방침과 이용약관에서 명시하지 않은 제3자에게 개인정보를 제공할 경우에는 사전에 이용자에게 공지 또는 통지하여 동의를 구하겠습니다. 단, 다음 각 호와 같은 경우에는 예외적으로 이용자의 동의 없이 제3자에게 제공할 수 있습니다.</p>
+          <ul class="lst">
+            <li><span class="k">1.</span> 회원으로부터 사전 동의를 받은 경우</li>
+            <li><span class="k">2.</span> 법률의 특별한 규정이 있거나 법령상 의무를 준수하기 위하여 불가피한 경우(수사·조사 목적으로 관련 법령에서 정한 절차와 방법에 따라 수사기관 및 감독당국이 개인정보 제공을 요구하는 경우를 포함)</li>
+            <li><span class="k">3.</span> 영업의 양도·합병 등(다만, 회사는 영업의 양도 등에 관한 사유가 발생하여 이용자의 개인정보 이전이 필요한 경우 관계법률에서 규정한 절차와 방법에 따라 사전에 고지하고 회원에게 개인정보 이전에 관한 동의 철회권을 부여하겠습니다)</li>
+          </ul>
+          <p>② 회원은 개인정보의 제3자 제공에 대하여 동의를 하지 않을 수 있고, 언제든지 제3자 제공 동의를 철회할 수 있습니다. 동의를 거부하시는 경우에도 제3자 제공에 기반한 서비스 외에는 이용이 가능하며, 다만 제3자 제공에 기반한 관련 서비스의 이용/제공이 제한될 수 있습니다. 기타 개인정보 제3자 제공에 대한 변동사항은 별도 통지를 통해 공지됩니다.</p>
+        </div>
+        <div data-lang="en">
+          <p>① The Company uses users’ personal information within the scope notified in Article 2, and where it provides personal information to a third party not specified in this Privacy Policy or the Terms of Service, it will notify the user in advance and obtain consent. However, in the following cases, it may exceptionally be provided to a third party without the user’s consent.</p>
+          <ul class="lst">
+            <li><span class="k">1.</span> Where prior consent has been obtained from the member;</li>
+            <li><span class="k">2.</span> Where there is a special provision of law or it is unavoidable to comply with a legal obligation (including where an investigative agency or supervisory authority requests provision in accordance with the procedures and methods prescribed by law for investigation purposes);</li>
+            <li><span class="k">3.</span> Business transfer or merger, etc. (however, where transfer of users’ personal information becomes necessary, the Company will give prior notice in accordance with the procedures and methods prescribed by relevant law and grant members the right to withdraw consent to the transfer).</li>
+          </ul>
+          <p>② Members may refuse consent to third-party provision and may withdraw such consent at any time. Even if consent is refused, services other than those based on third-party provision remain available, though the use/provision of related services based on third-party provision may be restricted. Other changes regarding third-party provision are announced through separate notice.</p>
+        </div>
+      </section>
+
+      <section class="art" id="a5">
+        <h2><span data-lang="ko">제5조 [개인정보의 처리위탁]</span><span data-lang="en">Article 5 [Entrustment of Personal Information Processing]</span></h2>
+        <div data-lang="ko">
+          <p>① 회사는 서비스 향상을 위해서 회원의 개인정보를 서비스 제공을 위해서 반드시 필요한 업무 중 일부의 수행을 위하여 본 조 제2항과 같이 개인정보를 위탁하고 있으며, 관계 법령에 따라 위탁계약 시 개인정보가 안전하게 관리될 수 있도록 필요한 사항을 규정하고 있습니다. 또한 공유하는 정보는 당해 목적을 달성하기 위하여 필요한 최소한의 정보에 국한됩니다.</p>
+          <p>② 수탁자 및 위탁업무 내용은 아래와 같습니다.</p>
+          <table class="dt"><thead><tr><th>수탁업체</th><th>위탁 업무 내용</th><th>개인정보의 보유 및 이용 기간</th></tr></thead><tbody>
+            <tr><td>(주)케이앤웍스게임서비스</td><td>고객센터 운영 및 고객상담</td><td>회원 탈퇴 시 혹은 위탁 계약 종료 시까지</td></tr>
+            <tr><td>(주)오니온파이브</td><td>고객센터 운영을 위한 인프라 운영/관리</td><td>회원 탈퇴 시 혹은 위탁 계약 종료 시까지</td></tr>
+            <tr><td>㈜카카오게임즈</td><td>Desktop Wallet Heroes 게임서비스 운영, QA</td><td>회원 탈퇴 시 혹은 위탁 계약 종료 시까지</td></tr>
+          </tbody></table>
+          <div class="star" data-lang="ko">※ 위 수탁사는 모두 국내에 소재하며, 현재 개인정보의 <b>국외 이전</b>은 없습니다.<br>※ (주)오니온파이브는 (주)케이앤웍스게임서비스의 고객센터 운영을 위한 인프라 <b>재수탁사</b>입니다.</div>
+          <p>③ 위탁업무의 내용이나 수탁자가 변경될 경우에는 본 개인정보 처리방침을 통하여 공개하도록 하겠습니다.</p>
+        </div>
+        <div data-lang="en">
+          <p>① To improve services, the Company entrusts part of the work essential for providing services as set out in paragraph ②, and, in accordance with relevant laws, stipulates necessary matters in the entrustment contract so that personal information is managed safely. The information shared is limited to the minimum necessary to achieve the purpose.</p>
+          <p>② The entrusted parties and the entrusted work are as follows.</p>
+          <table class="dt"><thead><tr><th>Entrusted party</th><th>Entrusted work</th><th>Retention / use period</th></tr></thead><tbody>
+            <tr><td>K&amp;Works Game Service Co., Ltd.</td><td>Customer center operation and customer consultation</td><td>Until membership withdrawal or termination of the entrustment contract</td></tr>
+            <tr><td>Onion Five Co., Ltd.</td><td>Infrastructure operation/management for the customer center</td><td>Until membership withdrawal or termination of the entrustment contract</td></tr>
+            <tr><td>Kakao Games Corp.</td><td>Desktop Wallet Heroes game service operation, QA</td><td>Until membership withdrawal or termination of the entrustment contract</td></tr>
+          </tbody></table>
+          <div class="star" data-lang="en">※ All entrusted parties above are located in Korea, and there is currently no <b>overseas transfer</b> of personal information.<br>※ Onion Five Co., Ltd. is a <b>sub-processor</b> of K&amp;Works Game Service Co., Ltd. for customer-center infrastructure.</div>
+          <p>③ Where the entrusted work or the entrusted party changes, it will be disclosed through this Privacy Policy.</p>
+        </div>
+      </section>
+
+      <section class="art" id="a6">
+        <h2><span data-lang="ko">제6조 [개인정보 파기 절차 및 방법]</span><span data-lang="en">Article 6 [Procedure and Method of Destruction]</span></h2>
+        <div data-lang="ko">
+          <p>① 회사는 원칙적으로 이용자의 개인정보에 대해 개인정보의 수집 및 이용목적이 달성되면 해당 정보를 지체 없이 파기합니다. 회사의 개인정보 파기절차 및 방법은 다음 각 호와 같습니다.</p>
+          <ul class="lst">
+            <li><span class="k">1.</span> 이용자가 회원가입 등을 위해 입력한 정보는 목적이 달성된 후 별도의 DB로 옮겨져(종이의 경우 별도의 서류함) 내부 방침 및 기타 관련 법령에 의한 정보보호 사유에 따라(제3조 보유 및 이용기간 참조) 일정 기간 저장된 후 파기됩니다. 개인정보는 법률에 의한 경우가 아니고서는 보유되는 이외의 다른 목적으로 이용되지 않습니다.</li>
+            <li><span class="k">2.</span> 종이에 출력된 개인정보는 분쇄기로 분쇄하여 파기합니다. 전자적 파일 형태로 저장된 개인정보는 기록을 재생할 수 없는 기술적 방법을 사용하여 삭제합니다.</li>
+          </ul>
+          <p>② 회사는 개인정보 보호법 제39조의6에 따라 장기간 서비스 미이용자의 개인정보 보호를 위하여 아래 사항에 해당하는 경우 이용자의 개인정보를 즉시 파기하거나 다른 이용자의 개인정보와 분리하여 별도로 저장·관리하는 등의 조치를 진행합니다.</p>
+          <ul class="lst">
+            <li><span class="k">-</span> 대상: 최근 1년간 서비스 로그인하지 않았거나 상담 이력이 없는 이용자 또는 최근 1년간 정산 이력이 없는 이용자(정산 등록 회원의 경우)</li>
+            <li><span class="k">-</span> 회사는 장기간 서비스 미이용자의 개인정보를 별도 분리보관하기 30일 전까지 별도 분리보관되는 사실 및 분리·보관 예정일, 별도 분리 보관하는 개인정보 항목을 이용자에게 이메일 등을 통해 알리고 있습니다.</li>
+          </ul>
+        </div>
+        <div data-lang="en">
+          <p>① In principle, the Company destroys personal information without delay once the purpose of collection and use is achieved. The destruction procedure and method are as follows.</p>
+          <ul class="lst">
+            <li><span class="k">1.</span> Information entered for sign-up, etc. is moved to a separate database after the purpose is achieved (or a separate file cabinet for paper) and, in accordance with internal policy and information-protection grounds under relevant laws (see Article 3), is stored for a certain period and then destroyed. Personal information is not used for any purpose other than retention unless required by law.</li>
+            <li><span class="k">2.</span> Personal information printed on paper is shredded. Personal information stored in electronic file form is deleted using a technical method that prevents reproduction of the records.</li>
+          </ul>
+          <p>② Pursuant to Article 39-6 of the Personal Information Protection Act, to protect the personal information of long-term non-users, where the following applies the Company immediately destroys the information or stores and manages it separately from that of other users.</p>
+          <ul class="lst">
+            <li><span class="k">-</span> Subject: users who have not logged in or had a consultation for the past year, or settlement-registered members with no settlement record for the past year.</li>
+            <li><span class="k">-</span> The Company notifies the user by email, etc. at least 30 days before storing such information separately, of the fact, the scheduled date, and the items to be stored separately.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="art" id="a7">
+        <h2><span data-lang="ko">제7조 [이용자 및 법정대리인의 권리·의무 및 행사방법]</span><span data-lang="en">Article 7 [Rights and Obligations of Users and Legal Representatives, and How to Exercise Them]</span></h2>
+        <div data-lang="ko">
+          <p>① 이용자 및 그 법정대리인은 회사에 대해 언제든지 다음 각 호의 개인정보 보호 관련 권리를 행사할 수 있습니다. 다만, 이용자의 개인정보가 구글플레이 등 외부 플랫폼과 연동되는 경우에는 해당 플랫폼 업체가 제공하는 방식에 따라 개인정보를 조회·변경하셔야 합니다.</p>
+          <ul class="lst"><li><span class="k">1.</span> 개인정보 열람 요구</li><li><span class="k">2.</span> 오류 등이 있을 경우 정정 요구</li><li><span class="k">3.</span> 삭제 요구</li><li><span class="k">4.</span> 처리정지 요구</li></ul>
+          <p>② 제1항에 따른 권리 행사는 회사에 대해 전자우편 등을 통하여 하실 수 있으며 개인정보 보호책임자 및 담당부서(we@supercat.co.kr)로 문의하실 수 있습니다. 회사는 이용자의 요청이 있는 경우 지체없이 필요한 조치를 취하겠습니다.</p>
+          <p>③ 이용자가 개인정보의 오류 등에 대한 정정 또는 삭제를 요구한 경우에는 회사는 정정 또는 삭제를 완료할 때까지 당해 개인정보를 이용하거나 제3자에게 제공하지 않습니다.</p>
+          <p>④ 제1항에 따른 권리 행사는 이용자의 법정대리인이나 위임을 받은 자 등 대리인을 통하여 하실 수 있습니다. 이 경우 개인정보 보호법 시행규칙 별지 제11호 서식에 따른 위임장을 제출하여야 합니다.</p>
+          <p>⑤ 회사는 이용자의 권리에 따른 열람의 요구, 정정·삭제의 요구, 처리 정지의 요구 시 열람 등 요구를 한 자가 본인이거나 정당한 대리인인지를 확인합니다.</p>
+        </div>
+        <div data-lang="en">
+          <p>① Users and their legal representatives may exercise the following privacy-related rights against the Company at any time. However, where the user’s personal information is linked with an external platform such as Google Play, the user must view/modify the information by the method provided by that platform.</p>
+          <ul class="lst"><li><span class="k">1.</span> Request to access personal information</li><li><span class="k">2.</span> Request to correct errors</li><li><span class="k">3.</span> Request to delete</li><li><span class="k">4.</span> Request to suspend processing</li></ul>
+          <p>② Rights under paragraph ① may be exercised by email, etc., and inquiries can be made to the Privacy Officer and the responsible department (we@supercat.co.kr). The Company will take necessary measures without delay upon request.</p>
+          <p>③ Where a user requests correction or deletion of errors, the Company will not use or provide the information to a third party until the correction or deletion is completed.</p>
+          <p>④ Rights under paragraph ① may be exercised through a legal representative or an authorized agent. In such case, a power of attorney in the form of Attached Form No. 11 of the Enforcement Rules of the Personal Information Protection Act must be submitted.</p>
+          <p>⑤ The Company verifies whether the person making the request to access, correct/delete, or suspend processing is the data subject or a legitimate agent.</p>
+        </div>
+      </section>
+
+      <section class="art" id="a8">
+        <h2><span data-lang="ko">제8조 [개인정보 자동 수집 장치의 설치·운영 및 거부]</span><span data-lang="en">Article 8 [Installation/Operation of and Refusal of Automatic Collection Devices]</span></h2>
+        <div data-lang="ko">
+          <p>① 회사는 개인화된 맞춤서비스를 제공하기 위해 이용자의 정보를 수시로 저장하고 불러오는 '쿠키(cookie, 접속정보파일)' 등 개인정보를 자동으로 수집하는 장치를 설치·운영합니다. 쿠키란 애플리케이션을 운영하는데 이용되는 서버가 이용자의 디바이스에 보내는 아주 작은 텍스트 파일로서 이용자의 디바이스 내 저장소에 저장됩니다. 이후 이용자가 애플리케이션을 이용할 경우, 서버는 이용자의 디바이스 내 저장되어 있는 쿠키의 내용을 읽어 이용자의 환경설정을 유지합니다.</p>
+          <p>② 회사는 다음 각 호와 같은 목적을 위해 쿠키 등을 사용할 수 있습니다.</p>
+          <ul class="lst"><li><span class="k">-</span> 사이트 방문 및 이용 형태 파악하여 이용자에게 최적화된 이용 환경 제공</li></ul>
+          <p>③ 이용자는 쿠키 설치에 대한 선택권을 가지고 있습니다. 따라서, 이용자는 디바이스 설정 또는 옵션에서 모든 쿠키를 허용하거나, 쿠키가 저장될 때마다 확인을 거치거나, 아니면 모든 쿠키의 저장을 거부할 수도 있습니다. 단, 이용자가 모든 쿠키의 저장을 거부하는 경우, 서비스 제공에 제약이 따르거나 이용이 불가할 수 있습니다.</p>
+        </div>
+        <div data-lang="en">
+          <p>① To provide personalized services, the Company installs and operates devices that automatically collect personal information such as ‘cookies (connection information files)’ that frequently store and retrieve user information. A cookie is a very small text file sent by the server operating the application to the user’s device and stored in the device’s storage. When the user later uses the application, the server reads the cookie to maintain the user’s settings.</p>
+          <p>② The Company may use cookies for the following purposes.</p>
+          <ul class="lst"><li><span class="k">-</span> Understanding visit and usage patterns to provide an optimized environment for the user</li></ul>
+          <p>③ Users have the option regarding cookie installation. Users may allow all cookies in device settings/options, be prompted each time a cookie is stored, or refuse the storage of all cookies. However, if the user refuses all cookies, service provision may be restricted or unavailable.</p>
+        </div>
+      </section>
+
+      <section class="art" id="a9">
+        <h2><span data-lang="ko">제9조 [개인정보 보호를 위한 기술적/관리적 대책]</span><span data-lang="en">Article 9 [Technical/Administrative Measures for Protection]</span></h2>
+        <div data-lang="ko">
+          <p>① 회사는 이용자들의 개인정보를 처리함에 있어 개인정보가 분실, 도난, 누출, 변조 또는 훼손되지 않도록 안전성을 확보하기 위하여 다음과 같은 기술적/관리적 대책을 강구하고 있습니다.</p>
+          <div class="n">1. 비밀번호 암호화</div>
+          <ul class="lst"><li><span class="k">-</span> 이용자의 비밀번호는 암호화하여 저장 및 관리됩니다. 따라서 이용자가 비밀번호를 잊은 경우에도 확인이 불가능하며, 소정의 본인확인 절차 후 새로운 비밀번호를 발급하는 방식을 채택하고 있습니다.</li></ul>
+          <div class="n">2. 네트워크 보안 강화</div>
+          <ul class="lst">
+            <li><span class="k">가.</span> 해킹, 컴퓨터 바이러스 등 비정상적인 네트워크 접근을 통해 개인정보가 유출되지 않도록 여러 기술적 조치를 취하고 있으며, 네트워크 접속에 대한 상시 모니터링을 수행합니다.</li>
+            <li><span class="k">나.</span> 서버 및 데이터베이스 간의 통신에도 보안성을 갖춘 암호화 통신 방식을 이용하고, 기타 시스템적으로 보안성을 확보하기 위한 가능한 모든 기술적 장치를 갖추려 노력합니다.</li>
+          </ul>
+          <div class="n">3. 개인정보 처리 직원의 최소화 및 교육</div>
+          <ul class="lst">
+            <li><span class="k">가.</span> 개인정보 관련 처리 직원은 담당자에 한정하고 별도의 비밀번호를 부여하여 정기적으로 갱신하며, 수시 교육을 통해 처리방침 준수를 강조합니다.</li>
+            <li><span class="k">나.</span> 입사 시 보안서약서를 통해 정보유출을 사전에 방지하고, 이행사항 및 준수 여부를 감사하기 위한 내부절차를 마련합니다.</li>
+            <li><span class="k">다.</span> 업무 인수인계는 보안이 유지된 상태에서 철저하게 이뤄지며, 입·퇴사 후 개인정보 사고에 대한 책임을 명확화합니다.</li>
+          </ul>
+          <div class="n">4. 출입 및 보관 통제</div>
+          <ul class="lst"><li><span class="k">-</span> 개인정보를 처리·보관하는 지역은 보안구역으로 설정하여 처리권한을 갖춘 자만 출입하도록 통제하며, 개인정보를 포함하는 유형물·전자기록은 시정장치가 있는 장소나 별도 접근권한이 설정된 컴퓨터에 보관합니다.</li></ul>
+          <div class="n">5. 개인정보보호전담기구의 운영</div>
+          <ul class="lst"><li><span class="k">-</span> 사내 개인정보보호전담기구를 통해 이행사항 및 준수 여부를 확인하고, 문제 발견 시 즉시 수정·시정하도록 노력합니다.</li></ul>
+          <p>② 이용자는 스스로를 보호하고 타인의 정보를 침해하지 않을 의무를 가지고 있습니다. 비밀번호를 포함한 개인정보가 유출되지 않도록 주의하시고, 타인의 개인정보와 게시물을 훼손하지 않도록 유의해 주십시오. 회사는 당사의 귀책사유 없이 회원의 부주의나 실수로 발생한 개인정보 문제에 대하여는 책임을 지지 않습니다.</p>
+        </div>
+        <div data-lang="en">
+          <p>① In processing users’ personal information, the Company takes the following technical/administrative measures to ensure safety against loss, theft, leakage, alteration, or damage.</p>
+          <div class="n">1. Password encryption</div>
+          <ul class="lst"><li><span class="k">-</span> Users’ passwords are stored and managed in encrypted form. Even if a user forgets their password it cannot be checked; a new password is issued after a prescribed identity verification.</li></ul>
+          <div class="n">2. Strengthened network security</div>
+          <ul class="lst">
+            <li><span class="k">a.</span> The Company takes various technical measures and performs constant monitoring so that personal information is not leaked through abnormal network access such as hacking or computer viruses.</li>
+            <li><span class="k">b.</span> Secure encrypted communication is used between servers and databases, and the Company strives to equip all possible technical devices to ensure security.</li>
+          </ul>
+          <div class="n">3. Minimizing and training staff handling personal information</div>
+          <ul class="lst">
+            <li><span class="k">a.</span> Staff handling personal information are limited to designated persons with separate passwords updated regularly, and compliance with the policy is emphasized through frequent training.</li>
+            <li><span class="k">b.</span> A security pledge upon hiring prevents leakage by persons in advance, and internal procedures audit performance and compliance.</li>
+            <li><span class="k">c.</span> Handover of duties is carried out thoroughly under maintained security, and responsibility for incidents is clarified upon hiring and resignation.</li>
+          </ul>
+          <div class="n">4. Access and storage control</div>
+          <ul class="lst"><li><span class="k">-</span> Areas processing/storing personal information are designated as security zones accessible only by authorized persons; tangible and electronic records are kept in locked locations or on computers with separate access rights.</li></ul>
+          <div class="n">5. Operation of a dedicated privacy organization</div>
+          <ul class="lst"><li><span class="k">-</span> An in-house dedicated privacy organization checks performance and compliance and promptly corrects any issues found.</li></ul>
+          <p>② Users are obliged to protect themselves and not infringe others’ information. Please take care not to leak your personal information including passwords, and not to damage others’ personal information or posts. The Company is not responsible for privacy issues arising from a member’s negligence or mistake without fault on the Company’s part.</p>
+        </div>
+      </section>
+
+      <section class="art" id="a10">
+        <h2><span data-lang="ko">제10조 [개인정보 보호책임자]</span><span data-lang="en">Article 10 [Privacy Officer]</span></h2>
+        <div data-lang="ko">
+          <p>① 회사는 개인정보를 안전하게 이용하여 최상의 서비스를 제공하기 위하여 최선을 다하고 있습니다. 개인정보를 보호하는데 있어 상기 고지한 사항에 반하는 사고가 발생할 시에 개인정보 보호책임자가 책임을 집니다. 그러나 기술적인 보완조치를 했음에도 불구하고, 해킹 등 기본적인 네트워크상의 위험성에 의해 발생하는 예기치 못한 사고로 인한 정보의 훼손 및 방문자가 작성한 게시물에 대한 각종 분쟁에 관해서는 일체 책임이 없습니다.</p>
+          <p>② 이용자는 아래의 지정된 책임자와 연락하여 회사의 개인정보 처리방침에 대한 의견 또는 불만을 전달하실 수 있습니다.</p>
+          <ul class="lst"><li><span class="k">-</span> 개인정보 보호책임자</li><li><span class="k">-</span> 성명: 김원배</li><li><span class="k">-</span> 직위: 이사</li><li><span class="k">-</span> 이메일: we@supercat.co.kr</li></ul>
+          <p>③ 귀하께서는 회사의 서비스를 이용하시며 발생하는 모든 개인정보보호 관련 민원을 개인정보 보호책임자 혹은 고객센터(we@supercat.co.kr)로 신고하실 수 있습니다. 회사는 신고사항에 대해 신속하게 충분한 답변을 드릴 것입니다.</p>
+          <p>④ 기타 개인정보침해에 대한 신고나 상담이 필요하신 경우에는 아래 기관에 문의하시기 바랍니다.</p>
+          <ul class="lst">
+            <li><span class="k">-</span> 개인정보침해신고센터: (국번없이) 118 (privacy.kisa.or.kr)</li>
+            <li><span class="k">-</span> 개인정보분쟁조정위원회: (국번없이) 1833-6972 (www.kopico.go.kr)</li>
+            <li><span class="k">-</span> 대검찰청: (국번없이) 1301 (www.spo.go.kr)</li>
+            <li><span class="k">-</span> 경찰청: (국번없이) 182 (ecrm.cyber.go.kr)</li>
+          </ul>
+        </div>
+        <div data-lang="en">
+          <p>① The Company does its best to provide the best service by safely using personal information. The Privacy Officer is responsible if an incident contrary to the above occurs. However, the Company bears no responsibility for damage to information due to unexpected incidents arising from basic network risks such as hacking despite technical safeguards, or for disputes over posts written by visitors.</p>
+          <p>② Users may contact the designated officer below to convey opinions or complaints about the Company’s Privacy Policy.</p>
+          <ul class="lst"><li><span class="k">-</span> Privacy Officer</li><li><span class="k">-</span> Name: Won-bae Kim</li><li><span class="k">-</span> Title: Director</li><li><span class="k">-</span> Email: we@supercat.co.kr</li></ul>
+          <p>③ You may report any privacy-related grievance arising from using the Company’s service to the Privacy Officer or the customer center (we@supercat.co.kr). The Company will provide a prompt and sufficient response.</p>
+          <p>④ For reporting or consultation on privacy infringement, please contact the following agencies.</p>
+          <ul class="lst">
+            <li><span class="k">-</span> Personal Information Infringement Report Center: 118 (privacy.kisa.or.kr)</li>
+            <li><span class="k">-</span> Personal Information Dispute Mediation Committee: 1833-6972 (www.kopico.go.kr)</li>
+            <li><span class="k">-</span> Supreme Prosecutors’ Office: 1301 (www.spo.go.kr)</li>
+            <li><span class="k">-</span> National Police Agency: 182 (ecrm.cyber.go.kr)</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="art" id="a11">
+        <h2><span data-lang="ko">제11조 [의견수렴 및 불만처리]</span><span data-lang="en">Article 11 [Feedback and Complaint Handling]</span></h2>
+        <div data-lang="ko"><p>회사는 개인정보보호와 관련하여 의견과 불만을 제기할 수 있는 창구를 개설하고 있습니다. 개인정보와 관련하여 불만이 있으신 분은 회사의 개인정보 보호책임자에게 의견을 주시면 접수 즉시 조치하여 처리 결과를 통보해드립니다.</p></div>
+        <div data-lang="en"><p>The Company operates a channel through which opinions and complaints regarding privacy can be raised. If you have a complaint, please contact the Company’s Privacy Officer; the Company will take action immediately upon receipt and notify you of the result.</p></div>
+      </section>
+
+      <section class="art" id="a12">
+        <h2><span data-lang="ko">제12조 [고지의 의무]</span><span data-lang="en">Article 12 [Duty to Notify]</span></h2>
+        <div data-lang="ko">
+          <p>① 회사의 개인정보 처리방침은 법률 및 회사의 내부 방침의 변경 등으로 인하여 변경될 수 있으며, 그러한 경우 회사는 그 변경사항을 회사 홈페이지 또는 서비스 내에서 이용자가 확인할 수 있는 방법으로 고지합니다.</p>
+          <p>② 이전의 개인정보 처리방침은 아래에서 확인할 수 있습니다.</p>
+          <ul class="lst">
+            <li><span class="k">-</span> 개인정보처리방침 시행일: 2022년 11월 8일</li>
+            <li><span class="k">-</span> 2017. 6. 29. ~ 2019. 5. 13. 적용 개인정보 처리방침</li>
+            <li><span class="k">-</span> 2019. 5. 14. ~ 2021. 8. 19. 적용 개인정보 처리방침</li>
+            <li><span class="k">-</span> 2021. 8. 20. ~ 2021. 11. 1. 적용 개인정보 처리방침</li>
+            <li><span class="k">-</span> 2021. 11. 02. ~ 2022. 11. 07. 적용 개인정보 처리방침</li>
+          </ul>
+        </div>
+        <div data-lang="en">
+          <p>① This Privacy Policy may change due to amendments to laws or the Company’s internal policy; in such case, the Company notifies the changes in a way that users can check on the Company website or within the service.</p>
+          <p>② Previous versions of the Privacy Policy can be found below.</p>
+          <ul class="lst">
+            <li><span class="k">-</span> Effective date of this Privacy Policy: November 8, 2022</li>
+            <li><span class="k">-</span> Privacy Policy applied Jun 29, 2017 – May 13, 2019</li>
+            <li><span class="k">-</span> Privacy Policy applied May 14, 2019 – Aug 19, 2021</li>
+            <li><span class="k">-</span> Privacy Policy applied Aug 20, 2021 – Nov 1, 2021</li>
+            <li><span class="k">-</span> Privacy Policy applied Nov 2, 2021 – Nov 7, 2022</li>
+          </ul>
+        </div>
+      </section>
+      </div>
+
+      <div class="foot">
+        <div class="links">
+          <span data-lang="ko"><a href="terms.html">서비스 이용약관</a> | <a href="privacy.html">개인정보 처리방침</a> | <a href="operation.html">운영 정책</a></span>
+          <span data-lang="en"><a href="terms.html">Terms of Service</a> | <a href="privacy.html">Privacy Policy</a> | <a href="operation.html">Operation Policy</a></span>
+        </div>
+        <div data-lang="ko"><span class="co">(주)슈퍼캣</span> ｜ 대표이사 김원배 ｜ 사업자등록번호 272-88-00336 ｜ 통신판매업 신고번호 2026-서울강남-01519호<br>서울시 강남구 언주로 315 ｜ 팩스 02-6442-9265 ｜ e-mail we@supercat.co.kr<br>ⓒ SUPERCAT Inc. All Rights Reserved.</div>
+        <div data-lang="en"><span class="co">SUPERCAT Inc.</span> ｜ CEO Won-bae Kim ｜ Business Registration No. 272-88-00336 ｜ Mail-order Business Report No. 2026-Seoul Gangnam-01519<br>315 Eonju-ro, Gangnam-gu, Seoul, Republic of Korea ｜ Fax +82-2-6442-9265 ｜ e-mail we@supercat.co.kr<br>ⓒ SUPERCAT Inc. All Rights Reserved.</div>
+      </div>
+    </article>
+
+    <aside class="toc">
+      <div class="toc-in">
+        <div class="toc-t"><span data-lang="ko">목차</span><span data-lang="en">CONTENTS</span></div>
+        <nav class="toc" id="toc"></nav>
+      </div>
+    </aside>
+  </div>
+
+<script>
+(function(){
+  "use strict";
+  var body=document.body;
+  function setLang(l){
+    body.classList.remove('lang-ko','lang-en'); body.classList.add('lang-'+l);
+    document.documentElement.lang=(l==='en'?'en':'ko');
+    [].forEach.call(document.querySelectorAll('.lang button'),function(b){b.classList.toggle('on',b.getAttribute('data-set')===l);});
+    try{localStorage.setItem('sc-policy:lang',l);}catch(e){}
+    buildTOC();
+  }
+  [].forEach.call(document.querySelectorAll('.lang button'),function(b){ b.addEventListener('click',function(){ setLang(b.getAttribute('data-set')); }); });
+  var toc=document.getElementById('toc');
+  function buildTOC(){
+    var l=body.classList.contains('lang-en')?'en':'ko'; toc.innerHTML='';
+    [].forEach.call(document.querySelectorAll('#doc h2'),function(h){
+      var span=h.querySelector('[data-lang="'+l+'"]'); if(!span) return;
+      var a=document.createElement('a'); a.href='#'+h.parentNode.id; a.setAttribute('data-sec',h.parentNode.id); a.textContent=span.textContent;
+      toc.appendChild(a);
+    });
+    spy();
+  }
+  var secs=[].slice.call(document.querySelectorAll('#doc .art'));
+  var tocIn=document.querySelector('.toc-in');
+  function spy(){
+    var y=118,cur=secs.length?secs[0].id:null;
+    for(var i=0;i<secs.length;i++){ if(secs[i].getBoundingClientRect().top<=y) cur=secs[i].id; else break; }
+    var act=null;
+    [].forEach.call(toc.querySelectorAll('a'),function(a){ var on=a.getAttribute('data-sec')===cur; a.classList.toggle('active',on); if(on) act=a; });
+    if(act&&tocIn){ var cT=tocIn.scrollTop,cB=cT+tocIn.clientHeight,eT=act.offsetTop,eB=eT+act.offsetHeight; if(eT<cT) tocIn.scrollTop=Math.max(0,eT-10); else if(eB>cB) tocIn.scrollTop=eB-tocIn.clientHeight+10; }
+  }
+  window.addEventListener('scroll',spy,{passive:true});
+  var tb=document.getElementById('tocbtn'); tb.addEventListener('click',function(){ body.classList.toggle('toc-open'); });
+  toc.addEventListener('click',function(){ body.classList.remove('toc-open'); });
+  var saved=null; try{saved=localStorage.getItem('sc-policy:lang');}catch(e){}
+  setLang(saved==='en'?'en':'ko');
+})();
+</script>
+</body>
+</html>
